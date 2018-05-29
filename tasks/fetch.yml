@@ -1,0 +1,17 @@
+#
+# fetch files from a web location
+#
+
+- name: get SQL Developer
+  get_url:
+    url:     "{{ sql_developer_url }}"
+    dest:    "/tmp/SQl_Developer.rpm"
+  when: sql_developer_url != "" and install_locally == false
+
+
+- name: get SQL Command Line
+  get_url:
+    url:     "{{ sqlcl_url }}"
+    dest:    "/tmp/sqlcl.zip"
+  when: sqlcl_url != "" and install_locally == false
+

@@ -1,0 +1,11 @@
+---
+- name: install Oracle SQL Developer
+  yum:
+    name: /tmp/SQl_Developer.rpm
+    state: present
+
+- name: Extract sqlcl.zip
+  unarchive:
+    src: sqlcl.zip
+    dest: /opt/sqlcl
+...

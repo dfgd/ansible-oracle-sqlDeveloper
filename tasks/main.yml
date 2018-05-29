@@ -1,0 +1,11 @@
+---
+  - name: fetch files from website
+  include: fetch.yml
+  when: install_locally
+  
+  
+  - import_tasks: rhel_7.yml
+  when:
+    - ansible_os_family == "RedHat"
+    - ansible_distribution_major_version == "7"
+...
