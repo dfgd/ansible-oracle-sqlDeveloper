@@ -7,5 +7,5 @@
 - name: Extract sqlcl.zip
   unarchive:
     src: /tmp/sqlcl.zip
-    dest: /opt/sqlcl
+    dest: /opt
 ...
