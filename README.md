@@ -13,6 +13,10 @@ None
 | install_locally           |False     | If true, expects the necessary files in /tmp folder    |
 | sql_developer_url         |""        | Download path for Oracle Sql Developer                 |
 | sqlcl_url                 |""        | Download path for Oracle Sql Command Line              |
+| instantclient_url         |""        | Download path for Oracle Instant Client                |
+| instantclient_sqlplus_url |""        | Download path for Oracle Instant Client SQL Plus       |
+| instantclient_tools_url   |""        | Download path for Oracle Instant Client Tools          |
+| intershopstudio_url       |""        | Download path for Intershop Studio                     |
 
 ## Dependencies
 

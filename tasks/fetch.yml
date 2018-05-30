@@ -15,3 +15,31 @@
     dest:    "/tmp/sqlcl.zip"
   when: sqlcl_url != "" and install_locally == false
 
+
+- name: get Instant Client
+  get_url:
+    url:     "{{ instantclient_url }}"
+    dest:    "/tmp/InstantClient.rpm"
+  when: instantclient_url != "" and install_locally == false
+
+
+- name: get Instant Client SqlPlus
+  get_url:
+    url:     "{{ instantclient_sqlplus_url }}"
+    dest:    "/tmp/InstantClient_Plus.rpm"
+  when: instantclient_sqlplus_url != "" and install_locally == false
+
+
+- name: get Instant Client Tools
+  get_url:
+    url:     "{{ instantclient_tools_url }}"
+    dest:    "/tmp/InstantClient_Tools.rpm"
+  when: instantclient_tools_url != "" and install_locally == false
+
+
+- name: get Intershop Studio
+  get_url:
+    url:     "{{ intershopstudio_url }}"
+    dest:    "/tmp/intershopStudio.zip"
+  when: intershopstudio_url != "" and install_locally == false
+

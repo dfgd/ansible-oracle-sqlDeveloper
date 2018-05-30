@@ -28,4 +28,10 @@
     src: /tmp/sqlcl.zip
     dest: /opt
   become: true
+
+- name: Extract IntershopStudio.zip
+  unarchive:
+    src: /tmp/intershopStudio.zip
+    dest: /opt
+  become: true
 ...
