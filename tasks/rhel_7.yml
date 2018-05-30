@@ -31,7 +31,7 @@
 
 - name: Extract IntershopStudio.zip
   unarchive:
-    src: /tmp/intershopStudio.zip
+    src: /tmp/IntershopStudio.zip
     dest: /opt
   become: true
 ...

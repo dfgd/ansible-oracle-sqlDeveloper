@@ -40,6 +40,6 @@
 - name: get Intershop Studio
   get_url:
     url:     "{{ intershopstudio_url }}"
-    dest:    "/tmp/intershopStudio.zip"
+    dest:    "/tmp/IntershopStudio.zip"
   when: intershopstudio_url != "" and install_locally == false
 
