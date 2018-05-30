@@ -7,7 +7,7 @@
 
 - name: install Oracle Instant Client
   yum:
-    name: /tmp/InstantClient_Plus.rpm
+    name: /tmp/InstantClient.rpm
     state: present
   become: true
 
