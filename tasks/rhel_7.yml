@@ -3,9 +3,23 @@
   yum:
     name: /tmp/SQl_Developer.rpm
     state: present
+  become: true
+
+- name: install Oracle Instant Client
+  yum:
+    name: /tmp/InstantClient.rpm
+    state: present
+  become: true
+
+- name: install Oracle Instant Client Tools
+  yum:
+    name: /tmp/InstantClient_Tools.rpm
+    state: present
+  become: true
 
 - name: Extract sqlcl.zip
   unarchive:
     src: /tmp/sqlcl.zip
     dest: /opt
+  become: true
 ...
