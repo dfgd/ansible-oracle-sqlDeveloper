@@ -2,4 +2,8 @@
 install_locally: False
 sql_developer_url: ""
 sqlcl_url: ""
+instantclient_url: ""
+instantclient_sqlplus_url: ""
+instantclient_tools_url: ""
+intershopstudio_url: ""
 ...
