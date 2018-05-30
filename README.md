@@ -26,7 +26,7 @@ None
       vars:
         install_locally: false
         jdk_tarball_file: "http://example.com/sql_developer.rpm"
-        java_download_from_oracle: "http://example.com/sqlcl.rpm"
+        java_download_from_oracle: "http://example.com/sqlcl.zip"
 
       roles:
         - role: dfgd.oracle-sqlDeveloper
